@@ -3,7 +3,8 @@
 This is a simple web api which will accept input factors and return a premium quote.
 
 ## instructions
-The api will run on localhost, port 44392. Swagger has been wired in to make working with the api as easy as possible.  Once the api is built and running, simply navigate to https://localhost:44392/swagger/index.html => expand the single POST end-point => click "Try it out" => plug sample values into the Request body and click the blue Execute button. 
+* The api will run on localhost, port 44392. Swagger has been wired in to make working with the api as easy as possible.  Once the api is built and running, simply navigate to https://localhost:44392/swagger/index.html => expand the single POST end-point => click "Try it out" => plug sample values into the Request body and click the blue Execute button.
+* By default, the api is wired up to serve the state and business factors from static json files. This can be changed to a completely in-memory persistence. Simply flip the value of UseInMemoryPersistence in AppSettings.json to true.
 
 ## next steps
 Here are a few things that I would do next with this api:
