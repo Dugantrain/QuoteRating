@@ -14,7 +14,7 @@ Here are a few things that I would do next with this api:
 * We would most likely want to authenticate all requests to this end-point. i also get the sense that this is meant to represent a public api rather than a backend-to-a-frontend. Therefore, we may want to introduce rate-limiting and gather metrics on api usage, response times, etc. All of this could be implemented inside the api; however, there are out-of-the-box solutions like Apigee that can sit in front of the api and give us all of these standard features and more.
 * Plug into some logging framework (Graylog, Kibana, etc.) and log all api exceptions.
 
-## unit-tests
+## unit tests
 There are several back-end unit tests that cover some of the areas of greater cyclomatic complexity.  Specifically, the QuoteService and JsonRepository have been covered.
 
 ## other
