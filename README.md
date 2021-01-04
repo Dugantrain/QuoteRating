@@ -13,7 +13,7 @@ Here are a few things that I would do next with this api:
 * flesh out the response a little more to include properties for base premium, state factor, business factor and hazard factor. I would think that the caller would want to know the criteria that go into the final premium (unless this is considered proprietary information. Even so, the caller could reverse-engineer the formula pretty easily).
 * add caching so that the api doesn't have to perform file access on every request. This could be as simple as fetching the lists from file on startup, adding those lists as singletons to IServiceCollection and having the IRepository class serve these in-memory representations.
 * We would most likely want to authenticate all requests to this end-point. i also get the sense that this is meant to represent a public api rather than a backend-to-a-frontend. Therefore, we may want to introduce rate-limiting and gather metrics on api usage, response times, etc. All of this could be implemented inside the api; however, there are out-of-the-box solutions like Apigee that can sit in front of the api and give us all of these standard features and more.
-* Plug into some logging framework (Graylog, Kibana, etc.) and log all api exceptions.
+* Plug into some logging framework (Graylog, Kibana, etc.) and log all api exceptions. At the very least, exceptions should be logged to the file system and contain data on the caller, the request and the exception details.
 
 ## unit tests
 There are several back-end unit tests that cover some of the areas of greater cyclomatic complexity.  Specifically, the QuoteService and JsonRepository have been covered.
