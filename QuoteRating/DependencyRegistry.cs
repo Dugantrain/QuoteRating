@@ -1,7 +1,6 @@
 using System;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using QuoteRating.Persistence;
 using QuoteRating.RatingEngine;
 using QuoteRating.Repositories;
 using QuoteRating.Services;

@@ -7,7 +7,6 @@ using NUnit.Framework.Internal;
 using Objectivity.AutoFixture.XUnit2.AutoMoq.Attributes;
 using QuoteRating.Models;
 using QuoteRating.Models.Factors;
-using QuoteRating.Persistence;
 using QuoteRating.Repositories;
 using QuoteRating.Services;
 using Xunit;

@@ -1,11 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using System.Net.Mime;
 using Newtonsoft.Json;
 using QuoteRating.Models.Factors;
-using QuoteRating.Repositories;
 
-namespace QuoteRating.Persistence
+namespace QuoteRating.Repositories
 {
     public class JsonRepository : IRepository
     {

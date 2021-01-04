@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using QuoteRating.Models;
-using QuoteRating.Persistence;
 using QuoteRating.RatingEngine;
 
 namespace QuoteRating.Controllers

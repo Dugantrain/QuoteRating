@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace QuoteRating.Models.Factors
+﻿namespace QuoteRating.Models.Factors
 {
     public class StateFactor : IFactor
     {
