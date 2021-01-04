@@ -40,6 +40,9 @@ namespace QuoteRating.Services
                 businessFactor = matchingBusinessFactor.Factor;
             }
 
+            if (stateFactor <= 0) stateFactor = 1;
+            if (businessFactor <= 0) businessFactor = 1;
+
             var premium = stateFactor * businessFactor * hazardFactor * basePremium;
 
 
